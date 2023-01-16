@@ -1,90 +1,65 @@
-# Hardhat Boilerplate
+# Metacraft Soldiity Challenge
 
-This repository contains a sample project that you can use as the starting point
-for your Ethereum project. It's also a great fit for learning the basics of
-smart contract development.
+## Solidity Challenge
+- Create a crowdfunding campaign where users can pledge funds to and claim funds from the contract.
 
-This project is intended to be used with the
-[Hardhat Beginners Tutorial](https://hardhat.org/tutorial), but you should be
-able to follow it by yourself by reading the README and exploring its
-`contracts`, `tests`, `scripts` and `frontend` directories.
+## Your contract(s) should be written such that:
 
-## Quick start
+1. Funds take the form of a custom ERC20 token
+2. Crowdfunded projects have a funding goal
+3. When a funding goal is not met, customers are be able to get a refund of their pledged funds
+4. dApps using the contract can observe state changes in transaction logs
+5. Optional bonus: contract is upgradeable
 
-The first things you need to do are cloning this repository and installing its
-dependencies:
+## Project Requirements - there are two requirements for the challenge:
 
-```sh
-git clone https://github.com/NomicFoundation/hardhat-boilerplate.git
-cd hardhat-boilerplate
-npm install
-```
+- Submit your project on GitHub as a public repository that we can run locally, preferably using truffle, ganache, and hardhat.
+If you prefer to use different tools, provide explicit instructions to get the contract up and running locally. We should be able to open the provided repository in VSCode and get the contract running locally within a few minutes.
 
-Once installed, let's run Hardhat's testing network:
+- Record a video of 5 min or less. Loom is a free online tool you could use. In the video, you will do a code walk-through where you share your screen and explain the code. In the code walk-through, run your code and explain the resulting output.
 
-```sh
-npx hardhat node
-```
+## Your project must provide the following to be successfully completed:
 
-Then, on a new terminal, go to the repository's root folder and run this to
-deploy your contract:
+### Functionality and Explanation:
 
-```sh
-npx hardhat run scripts/deploy.js --network localhost
-```
+#### Functionality
 
-Finally, we can run the frontend with:
+• Code compiles
 
-```sh
-cd frontend
-npm install
-npm start
-```
+• Code accomplishes task described in prompt
 
-Open [http://localhost:3000/](http://localhost:3000/) to see your Dapp. You will
-need to have [Metamask](https://metamask.io) installed and listening to
-`localhost 8545`.
+• Code has no glaring security issues
 
-## User Guide
+• Code is readable and organized
 
-You can find detailed instructions on using this repository and many tips in [its documentation](https://hardhat.org/tutorial).
+• Demonstrates ability to create and use modifiers appropriately
 
-- [Writing and compiling contracts](https://hardhat.org/tutorial/writing-and-compiling-contracts/)
-- [Setting up the environment](https://hardhat.org/tutorial/setting-up-the-environment/)
-- [Testing Contracts](https://hardhat.org/tutorial/testing-contracts/)
-- [Setting up Metamask](https://hardhat.org/tutorial/boilerplate-project#how-to-use-it)
-- [Hardhat's full documentation](https://hardhat.org/docs/)
+• Demonstrates ability to create and emit events appropriately
 
-For a complete introduction to Hardhat, refer to [this guide](https://hardhat.org/getting-started/#overview).
+• Demonstrates ability to use contract inheritance appropriately
 
-## What's Included?
+• Demonstrates ability to validate conditions and throw sensible errors
 
-This repository uses our recommended hardhat setup, by using our [`@nomicfoundation/hardhat-toolbox`](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-toolbox). When you use this plugin, you'll be able to:
+• Demonstrates ability to appropriately use global functions to access information about the transaction, block, address, etc.
 
-- Deploy and interact with your contracts using [ethers.js](https://docs.ethers.io/v5/) and the [`hardhat-ethers`](https://hardhat.org/hardhat-runner/plugins/nomiclabs-hardhat-ethers) plugin.
-- Test your contracts with [Mocha](https://mochajs.org/), [Chai](https://chaijs.com/) and our own [Hardhat Chai Matchers](https://hardhat.org/hardhat-chai-matchers) plugin.
-- Interact with Hardhat Network with our [Hardhat Network Helpers](https://hardhat.org/hardhat-network-helpers).
-- Verify the source code of your contracts with the [hardhat-etherscan](https://hardhat.org/hardhat-runner/plugins/nomiclabs-hardhat-etherscan) plugin.
-- Get metrics on the gas used by your contracts with the [hardhat-gas-reporter](https://github.com/cgewecke/hardhat-gas-reporter) plugin.
-- Measure your tests coverage with [solidity-coverage](https://github.com/sc-forks/solidity-coverage).
+• Demonstrates ability to choose appropriate memory types for parameters, variables, etc.
 
-This project also includes [a sample frontend/Dapp](./frontend), which uses [Create React App](https://github.com/facebook/create-react-app).
+• Smart contract can quickly and easily be run on a local network
 
-## Troubleshooting
+• Project demonstrates understanding of common EVM developer tooling, e.g. truffle, ganache, hardhat, etc.
 
-- `Invalid nonce` errors: if you are seeing this error on the `npx hardhat node`
-  console, try resetting your Metamask account. This will reset the account's
-  transaction history and also the nonce. Open Metamask, click on your account
-  followed by `Settings > Advanced > Reset Account`.
+• Contract is upgradeable
 
-## Setting up your editor
+#### Explanation:
 
-[Hardhat for Visual Studio Code](https://hardhat.org/hardhat-vscode) is the official Hardhat extension that adds advanced support for Solidity to VSCode. If you use Visual Studio Code, give it a try!
+• Demo and code read-aloud is submitted
 
-## Getting help and updates
+• Demo and code read-aloud is complete (all steps explained)
 
-If you need help with this project, or with Hardhat in general, please read [this guide](https://hardhat.org/hardhat-runner/docs/guides/getting-help) to learn where and how to get it.
+• Demo and code read-aloud is clear and understandable
 
-For the latest news about Hardhat, [follow us on Twitter](https://twitter.com/HardhatHQ), and don't forget to star [our GitHub repository](https://github.com/NomicFoundation/hardhat)!
+## Now let's get coding
 
-**Happy _building_!**
+Take your time and feel free go back and reread the instructions. Once you are done, click on continue below and submit your GitHub and video links.
+
+If you need any support, please email us at academy@metacrafters.io or join our Discord
